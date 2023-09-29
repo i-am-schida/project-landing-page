@@ -1,0 +1,52 @@
+/* Universal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Aril, sans-serif;
+}
+
+.container {
+
+}
+
+/* Header */
+
+.header {
+  background-color: #1F2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10%;
+}
+
+.logo img {
+  max-width: 100%;
+  height: 60px;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-links a {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 15px;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937;
+}

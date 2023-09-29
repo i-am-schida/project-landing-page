@@ -10,10 +10,9 @@ body, html {
   box-sizing: border-box; 
   font-family: Roboto, Aril, sans-serif;
   min-width: 800px;
+  overflow: hidden; /* makes page unscrollable */
 }
-
 /* <--------Header--------> */
-
 .logo img {
   width: auto;
   height: 60px;
@@ -139,11 +138,10 @@ div .info img {
   width: 180px;
 }
 /* <--------Section 3--------> */
-
 .section3 {
   flex-grow: 1;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 16%;
+  padding-right: 16%;
   background-color: rgb(231, 231, 231);
   display: flex;
   align-items: center;
@@ -158,10 +156,43 @@ div .info img {
   display: flex;
   justify-content: flex-end;
 }
-
+/* <--------Section 4--------> */
+.section4 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+.section4-blue {
+  background-color: rgb(0, 123, 255);
+  border-radius: 10px;
+  width: 80%;
+  color: white;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.section4-left {
+  padding-left: 70px;
+  flex-grow: 2;
+}
+.section4-left h3 {
+  margin: 0;
+  font-weight: 400;
+}
+.section4-left p {
+  font-weight: 100;
+  font-size: 15px;
+}
+.section4-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
 /* <--------Footer--------> */
-
-/* footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -169,5 +200,7 @@ div .info img {
   text-align: center;
   background-color: #1F2937;
   color: white;
-  padding: 10px 0;
-} */
+  padding: 25px;
+  font-weight: 100;
+  font-size: 12px;
+}

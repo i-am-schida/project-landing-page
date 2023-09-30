@@ -91,6 +91,10 @@ button {
   border-radius: 10px;
   border: none;
 }
+button a {
+  text-decoration: none;
+  color: white;
+}
 /* <--------Section 2--------> */
 .section2 {
   display: flex;

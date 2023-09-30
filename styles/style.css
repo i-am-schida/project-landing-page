@@ -10,7 +10,6 @@ body, html {
   box-sizing: border-box; 
   font-family: Roboto, Aril, sans-serif;
   min-width: 800px;
-  
 }
 /* <--------Header--------> */
 header {
@@ -22,7 +21,6 @@ header {
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
-  border-bottom: 1px solid red; /* visual aid */
 }
 .left-header img {
   width: auto;
@@ -206,7 +204,6 @@ div .info img {
 }
 /* <--------Footer--------> */
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -216,4 +213,7 @@ footer {
   padding: 25px;
   font-weight: 100;
   font-size: 12px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }

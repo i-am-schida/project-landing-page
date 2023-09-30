@@ -13,23 +13,25 @@ body, html {
   
 }
 /* <--------Header--------> */
-.logo img {
+header {
+  height: 40px;
+  padding: 15px;
+  background-color: #1F2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom: 1px solid red;
+}
+.left-header img {
   width: auto;
   height: 60px;
 }
-.left-header, .right-header {
+.left-header {
   display: flex;
   align-items: center;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  background-color: #1f2937;
-  padding-left: 10%;
-  padding-right: 10%;
- 
-  height: 40px;
+  justify-content: center;
 }
 header p { /* logo title */
   color: white;
@@ -48,35 +50,30 @@ ul a {
   font-weight: 100;
   font-size: small;
 }
-
 /* <--------Main--------> */
-
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; /*  */
+  justify-content: flex-start; /*  */
   min-height: 100%;
 }
 /* <--------Section 1--------> */
 .section1 {
-  height: 290px;
+  flex: 1;
   display: flex;
-  flex-grow: 1;
+  align-items: center;
+  background-color: #1F2937;
+  padding: 0 10%;
 }
-.section1-container {
-  display: flex;
-  background-color: #1f2937;
+.container-left {
   color: white;
-  padding-left: 10%;
-  padding-right: 10%;
-  height: 100%;
-  gap: 50px;
+  margin-right: 50px;
 }
 .container-left, .container-right {
   width: 50%;
 }
 .container-left h1 {
-  font-size: 30px;
+  font-size: 50px;
   margin: 0px;
 }
 .container-left p {
@@ -84,15 +81,8 @@ main {
   font-size: 15px;
   margin: 10px 0;
 }
-.container-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .container-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 .container-right img {
   width: 100%;
@@ -100,13 +90,17 @@ main {
 }
 /* <--------Section 2--------> */
 .section2 {
-  text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex: 1;
+}
+.section2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .section2-top {
   font-size: 26px;
@@ -115,9 +109,10 @@ main {
 }
 .section2-bottom {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* flex-wrap: wrap;  */
-  gap: 52px;
 }
 div .info img {
   width: 200px;

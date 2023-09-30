@@ -10,7 +10,7 @@ body, html {
   box-sizing: border-box; 
   font-family: Roboto, Aril, sans-serif;
   min-width: 800px;
-  overflow: hidden; /* makes page unscrollable */
+  
 }
 /* <--------Header--------> */
 .logo img {
@@ -162,7 +162,7 @@ div .info img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
 }
 .section4-blue {
   background-color: rgb(0, 123, 255);
